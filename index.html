@@ -108,7 +108,8 @@ Known Issues:
 	
 	<div id="content" class="w3-container">
 		<p>Do you have a fever?</p>
-        <a href="#three" class="w3-btn w3-grey w3-round"> Go to Page 3 </a>
+        <a href="#three" onclick="coldAdd()" class="w3-btn w3-grey w3-round"> Yes </a> 
+        <a href="#three" onclick="allergyAdd()" class="w3-btn w3-grey w3-round"> No </a>
 	</div>
 </div>	
 
@@ -119,7 +120,8 @@ Known Issues:
 	
 	<div id="content" class="w3-container">
 		<p>Do you have a sore throat?</p>
-        <a href="#four" class="w3-btn w3-grey w3-round"> Go to Page 4 </a>
+        <a href="#four" onclick="coldAdd()" class="w3-btn w3-grey w3-round"> Yes </a> 
+        <a href="#four" onclick="allergyAdd()" class="w3-btn w3-grey w3-round"> No </a>
 	</div>
 </div>	
 
@@ -130,7 +132,19 @@ Known Issues:
 	
 	<div id="content" class="w3-container">
 		<p>Are your symptoms seasonal or chronic?</p>
-        <a href="#results" class="w3-btn w3-grey w3-round"> Go to Results </a>
+        <a href="#results" onclick="allergyAdd()" class="w3-btn w3-grey w3-round"> Yes </a> 
+        <a href="#results" onclick="coldAdd()" class="w3-btn w3-grey w3-round"> No </a>  
+	</div>
+</div>
+
+<div class="page" id="results">
+	<div class="w3-container w3-flat-carrot">
+		<h1>Results</h1>
+	</div>
+	
+	<div id="content" class="w3-container">
+        <a href="#two" onclick="" class="w3-btn w3-grey w3-round"> Click to see your Results </a> 
+        <p id="resultsCalculations">The results will show here once clicked</p>  
 	</div>
 </div>
 
