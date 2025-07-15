@@ -40,7 +40,7 @@ Known Issues:
 
         function allergyAdd(){
             allergy_count = allergy_count + 1;
-		alert(allergy_count);
+		//alert(allergy_count);
         }
 
         function coldAdd(){
@@ -95,8 +95,9 @@ Known Issues:
 	</div>
 	
     	<div id="content" class="w3-container">
-        <p>Put Question 1 content here.</p>
-        <a href="#two" class="w3-btn w3-grey w3-round"> Go to Page 2 </a>    
+        <p>Are your eyes watery or itchy?</p>
+        <a href="#two" onclick="allergyAdd()" class="w3-btn w3-grey w3-round"> Yes </a> 
+        <a href="#two" onclick="coldAdd()" class="w3-btn w3-grey w3-round"> No </a>    
     	</div>
 </div>
 
@@ -106,7 +107,7 @@ Known Issues:
 	</div>
 	
 	<div id="content" class="w3-container">
-		<p>Content of page 2 goes here.</p>
+		<p>Do you have a fever?</p>
         <a href="#three" class="w3-btn w3-grey w3-round"> Go to Page 3 </a>
 	</div>
 </div>	
@@ -117,7 +118,7 @@ Known Issues:
 	</div>
 	
 	<div id="content" class="w3-container">
-		<p>Content of page 3 goes here.</p>
+		<p>Do you have a sore throat?</p>
         <a href="#four" class="w3-btn w3-grey w3-round"> Go to Page 4 </a>
 	</div>
 </div>	
@@ -128,7 +129,7 @@ Known Issues:
 	</div>
 	
 	<div id="content" class="w3-container">
-		<p>Content of page 4 goes here.</p>
+		<p>Are your symptoms seasonal or chronic?</p>
         <a href="#results" class="w3-btn w3-grey w3-round"> Go to Results </a>
 	</div>
 </div>
