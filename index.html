@@ -36,7 +36,8 @@ Known Issues:
 <script>
         var allergy_count = 0;
         var cold_count = 0;
-
+        var allergyPercent = 0;
+        var coldPercent = 0;
 
         function allergyAdd(){
             allergy_count = allergy_count + 1;
@@ -45,6 +46,14 @@ Known Issues:
 
         function coldAdd(){
             cold_count = cold_count + 1;
+        }
+
+
+        function calculateResults(){
+            allergyPercent = allergy_count/(allergy_count+cold_count)*100;
+            coldPercent = cold_count/(allergy_count+cold_count)*100;
+        var resultText = document.getElementById("resultsCalculations");
+        resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent; 
         }
 
   </script>
@@ -143,7 +152,7 @@ Known Issues:
 	</div>
 	
 	<div id="content" class="w3-container">
-        <a href="#two" onclick="" class="w3-btn w3-grey w3-round"> Click to see your Results </a> 
+        <a onclick="calculateResults()" class="w3-btn w3-grey w3-round"> Click to see your Results </a> 
         <p id="resultsCalculations">The results will show here once clicked</p>  
 	</div>
 </div>
